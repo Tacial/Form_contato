@@ -4,7 +4,6 @@
 <title>Entre em contato</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-<meta name="description" content="Aumentamos a rentabilidade da sua mídia com tecnologia e dados próprios.">
 </head>
 <body>
  <div class="container">
@@ -43,46 +42,19 @@
 	<br/><input type="submit" class="purple_button" value="Enviar mensagem"/>
       </form>	
    </div>
-   <script type="text/javascript">
-	$(function(){
-		$('input.purple_button[type="submit"]').click(function(){
-			$('#success_message').html('Aguarde um instante...').show();
-				var fields = $('form').serialize();
-				$.ajax({
-					url: 'http://servicemail/',
-					dataType: 'json',
-					type:'POST',
-					data: fields,
-					success: function( data ) {			
-						$('#success_message').html('Sua mensagem foi enviada com sucesso!').show();
-					}
-				});
-			$('#contact_form').hide();
-			return false;    
-		});  
-	})
-  </script>
   <div class="clearfix"></div>
   <hr class="main_divider"/>
   <footer>
-	<a href="#" class="pull-left"><img src="img/logo.png"/></a>
-	<p class="pull-left">©2016</p>
-	<ul class="pull-left">
-		<li><a href="comofunciona.html">O que fazemos</a></li>
-		<li><a href="empresa.html">Sobre a empresa</a></li>
-		<li><a href="faq.html">Perguntas frequentes</a></li>
-		<li><a href="contato.html">Contato</a></li>
-	</ul>
+     <p class="pull-left">©2016</p>
+     <ul class="pull-left">
+	<li><a href="comofunciona.html">O que fazemos</a></li>
+	<li><a href="empresa.html">Sobre a empresa</a></li>
+	<li><a href="faq.html">Perguntas frequentes</a></li>
+	<li><a href="contato.html">Contato</a></li>
+     </ul>
   </footer>
 </div>
 <script type="text/javascript" src="scripts.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-56932919-5', 'auto');
-  ga('send', 'pageview');
-</script>
+
 </body>
 </html>
